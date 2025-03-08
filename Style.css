@@ -1,0 +1,189 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+    background: #F8F9FA; /* Light Grey */
+    color: #333; /* Dark Grey Text */
+    text-align: center;
+}
+
+/* Navigation Bar */
+header {
+    background: #2C3E50; /* Dark Blue */
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #17A2B8; /* Teal */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: white;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    font-size: 2.8em;
+    color: #2C3E50;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 15px;
+    background: #2C3E50; /* Dark Blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #17A2B8; /* Teal */
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Program Boxes */
+.program-box {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.program-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Application Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form select, form textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    color: #333;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #2C3E50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #17A2B8;
+}
+
+/* Social Media Links */
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #2C3E50;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #17A2B8;
+}
+
+/* Footer */
+footer {
+    background: #2C3E50;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    .program-box {
+        width: 90%;
+    }
+}
